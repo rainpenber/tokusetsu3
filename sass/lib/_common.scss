@@ -8,8 +8,9 @@
 }
 
 // Common
+// 适配中文：增加苹方、思源黑体、微软雅黑
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue','PingFang SC','Source Han Sans','Microsoft YaHei', Helvetica, Arial, sans-serif;
     background: $bg;
     color: $base;
     -webkit-font-smoothing: antialiased;

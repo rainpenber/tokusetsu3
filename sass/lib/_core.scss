@@ -53,6 +53,7 @@
 .globalHeader-shareBtns {
     display: flex;
     align-items: center;
+    margin-left:auto;
     .btn-tw,
     .btn-fb {
         @media #{$mq-sm} {
@@ -92,7 +93,7 @@
 .globalHeader-labelName {
     display: flex;
     align-items: center;
-    max-width: 60%;
+    width:100%;
     word-break: break-all;
     a {
         color: $base;
@@ -195,6 +196,7 @@
         max-width: 300px;
         display: block;
         margin: 0 auto 1.5em;
+        box-shadow: (0 2px 5px rgba(0,0,0,0.3));
         @media (max-width: 319px) {
             max-width: 100%;
         }
@@ -374,6 +376,7 @@ body.is-open {
 }
 
 // youtube
+.section-bilibili,
 .section-youtube,
 .section-nicovideo {
     .section-content {
@@ -381,6 +384,7 @@ body.is-open {
         margin: auto;
     }
 }
+
 .video-wrap {
     position: relative;
     padding-bottom: 56.25%;
@@ -405,6 +409,7 @@ body.is-open {
         margin-right: auto;
     }
 }
+
 
 // Additional Content
 .section-additionalContent {

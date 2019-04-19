@@ -5,30 +5,34 @@
   https://sanographix.net
   (c) 2016 Showkaku Sano
   Free to use under the MIT license.
+  ——————
+  ejs template modified by RyanPenber
+  my website: http://ryanz.cn
 -->
 <html prefix="og: http://ogp.me/ns#">
 <head>
-
+  <!--use script to-->
+  <!--<script src="../js/import.js"></script>-->
   <meta charset="utf-8">
 
   <%# テーマオプション類 %>
-  <meta name="font:Title" content="Helvetica Neue"/>
-  <meta name="font:Body" content="Helvetica Neue"/>
+  <meta name="font:Title" content=""/>
+  <meta name="font:Body" content=""/>
 
-  <meta name="image:Background Image" content=""/>
-  <meta name="image:Header Image" content=""/>
-  <meta name="image:Circle Logo" content=""/>
-  <meta name="image:Jacket" content=""/>
-  <meta name="image:Title Logo" content=""/>
-  <meta name="image:Banner" content=""/>
-  <meta name="image:Og Image" content=""/>
+  <meta name="image:Background Image" content="<%- Background_Image %>"/>
+  <meta name="image:Header Image" content="<%- HeaderImage %>"/>
+  <meta name="image:Circle Logo" content="<%- Circle_Logo %>"/>
+  <meta name="image:Jacket" content="<%- Jacket %>"/>
+  <meta name="image:Title Logo" content="<%- Title_Logo %>"/>
+  <meta name="image:Banner" content="<%- Banner %>"/>
+  <meta name="image:Og Image" content="<%- Og_Image %>"/>
 
-  <meta name="image:02 l Introduction Heading Image" content="" />
-  <meta name="image:06 l Footer Additional Image" content="" />
+  <meta name="image:02 l Introduction Heading Image" content="<%- Intro_Heading_Image %>" />
+  <meta name="image:06 l Footer Additional Image" content="<%- Footer_Image %>" />
 
-  <meta name="color:Accent" content="#ed1c24"/>
+  <meta name="color:Accent" content="<%- Accent_Color %>"/>
 
-  <meta name="if:00 l Enable Dark Mode" content="1"/>
+  <meta name="if:00 l Enable Dark Mode" content=""/>
 
   <meta name="select:Header Title Logo Position" content="top" title="Top">
   <meta name="select:Header Title Logo Position" content="middle" title="Middle">
@@ -125,73 +129,55 @@
 
   <meta name="text:08 l Footer Text" content="" />
 
-  <title>{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}{block:IndexPage}{block:If03lCircleName} - {text:03 l Circle Name}{/block:If03lCircleName}{/block:IndexPage}</title>
+  <title><%- author %> - <%- Production_Title %> - <%- Circle_Name %></title>
 
   <meta name="viewport" content="width=device-width">
-  {block:Description}
-    <meta name="description" content="{MetaDescription}" />
-    <meta name="og:description" content="{MetaDescription}" />
-  {/block:Description}
-  <meta property="og:title" content="{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}{block:IndexPage}{block:If03lCircleName} - {text:03 l Circle Name}{/block:If03lCircleName}{/block:IndexPage}" />
+    <meta name="description" content="<%- Introduction_Text %>" />
+    <meta name="og:description" content="<%- Introduction_Text %>" />
+  <meta property="og:title" content="<%- author %> - <%- Production_Title %> - <%- Circle_Name %>" />
   <meta property="og:type" content="website" />
-
-  <meta property="og:site_name" content="{Title}" />
-  {block:IndexPage}
-    <link rel="canonical" href="{BlogURL}"/>
-    <meta property="og:url" content="{BlogURL}" />
-  {/block:IndexPage}
-  {block:PermalinkPage}
-    <link rel="canonical" href="{Permalink}"/>
-    <meta property="og:url" content="{Permalink}" />
-  {/block:PermalinkPage}
+  <meta property="og:site_name" content="<%- Production_Title %>" />
+    <link rel="canonical" href="<%- Introduction_Text %>"/>
+    <meta property="og:url" content="<%- Introduction_Text %>" />
+    <link rel="canonical" href="<%- Introduction_Text %>"/>
+    <meta property="og:url" content="<%- Introduction_Text %>" />
   <meta name="twitter:card" content="summary_large_image">
-  {block:IfOgImageImage}
-    <meta name="twitter:image:src" content="{image:Og Image}">
-    <meta property="og:image" content="{image:Og Image}" />
-  {block:IfOgImageImage}
-  {block:IfNotOgImageImage}
-    <meta name="twitter:image:src" content="{image:Header Image}">
-    <meta property="og:image" content="{image:Header Image}" />
-  {block:IfNotOgImageImage}
+    <meta name="twitter:image:src" content="<%- Introduction_Text %>">
+    <meta property="og:image" content="<%- Introduction_Text %>" />
+    <meta name="twitter:image:src" content="<%- Introduction_Text %>">
+    <meta property="og:image" content="<%- Introduction_Text %>" />
 
-  {block:IfNot00lEnableDarkMode}
-    <link rel="stylesheet" href="https://static.tumblr.com/xxf6ewk/ynDou3xra/style-light.css" />
-  {/block:IfNot00lEnableDarkMode}
-  {block:If00lEnableDarkMode}
-    <link rel="stylesheet" href="https://static.tumblr.com/xxf6ewk/qKTou3xr9/style-dark.css" />
-  {/block:If00lEnableDarkMode}
 
-  <link rel="shortcut icon" href="{Favicon}">
+    <link rel="stylesheet" href="./css/style-<%- theme %>.css" />
+
+  <link rel="shortcut icon" href="<%- favicon %>">
 
 </head>
 <body class="page-<%= pageId %>"
-{block:IfBackgroundImageImage}
-  style="background-image: url('{image:Background Image}');"
-{/block:IfBackgroundImageImage}
+  <% if(Background_Image==null){ %>
+      style="background-image: url('<%- Background_Image %>');"
+        <%}%>
 >
-
 <style>
-{CustomCSS}
-
   body {
-    font-family: {font:Body};
+    font-family: <%- font_Body %>;
   }
 
   h1,h2,h3,h4,h5,h6 {
-    font-family: {font:Title};
+    font-family: <%- font_Title %>;
   }
 
   a,
   .track-number {
-      color: {color:Accent};
+      color: <%- Accent_Color %>;
   }
 
   .btn {
-      color: {color:Accent};
-      border-color: {color:Accent};
+      color: <%- Accent_Color %>;
+      border-color: <%- Accent_Color %>;
   }
   .btn:hover {
-    background-color: {color:Accent};
+    background-color: <%- Accent_Color %>;
   }
 
 </style>

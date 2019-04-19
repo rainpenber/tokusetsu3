@@ -1,0 +1,127 @@
+{
+    "Production_Title": "茜色诗集",
+    "author": "泠鸢yousa",
+    "page_url": "http://www.lyyousa.cn/1st-album.html",
+    "Language": "cn",
+
+
+
+    "font_Body": "\"Helvetica Neue\",\"Source Han Sans\",\"PingFang SC\",\"Microsoft Yahei\",Helvetica, Arial, sans-serif",
+    "font_Title": "\"Helvetica Neue\",\"Source Han Sans\",\"PingFang SC\",\"Microsoft Yahei\",Helvetica, Arial, sans-serif",
+
+
+    "Background_Image": "",
+    "HeaderImage": "./images/hero.jpg",
+    "Circle_Logo": "./images/circle-logo.png",
+
+
+    "Jacket": "./images/Jacket.jpg",
+    "Title_Logo": "./images/title.png",
+    "Banner": "./images/banner.jpg",
+    "Og_Image": "./images/ogimage.jpg",
+    "favicon": "./images/favicon.png",
+
+
+    "Intro_Heading_Image": "./images/intro-heading.png",
+    "Footer_Image": "",
+    "theme": "light",
+    "Accent_Color": "#e86779",
+
+    "Header_Title_Logo_Position": "bottom",
+    "Global_Header_Color": "transparent",
+
+    "Enable_Share_Buttons": "1",
+
+    "Book_Sample_Heading": "实物样张",
+    "Book_Sample_Image_01": "./images/1.png",
+    "Book_Sample_Image_02": "./images/2.jpg",
+    "Book_Sample_Image_03": "./images/3.png",
+    "Book_Sample_Image_04": "",
+    "Book_Sample_Image_05": "",
+    "Book_Sample_Image_06": "",
+
+
+    "Header_Title_Width": "1000",
+    "Introduction_Heading": "INTRODUCTION",
+    "Introduction_Text": "这里是介绍文字，专辑好听又漂亮，快来买呀<br>这是第二行文字，中间用回车分开",
+    "Introduction_Heading_Image_Width": "543",
+
+
+
+
+    "Circle_Name": "泠鸢yousa",
+    "Circle_URL": "https://weibo.com/lingyuanyousa",
+    "Spec": "1CD+画册+钥匙扣",
+    "Release_Date": "2019/07/01",
+    "Booth": "成都CP19",
+    "Price": "99 RMB",
+
+    "Store01Name": "摩点网",
+    "Store01URL": "http://www.modian.com",
+    "Store02Name": "",
+    "Store02URL": "",
+    "Store03Name": "",
+    "Store03URL": "",
+    "Store_Buttons_Heading": "AVAILABLE NOW",
+
+    "Youtube_Code": "XgyKbPy1RsQ",
+    "Soundcloud_Embed_Code": "598948320",
+    "Nicovideo_SM_number": "666",
+    "Bili_AV_number": "5784107",
+    "Netease_Song_ID": "430062882",
+
+    "Total_Tracks": 10,
+    "Track01_Title": "曲目1",
+    "Track01_Description": "ft.初音未来",
+    "Track02_Title": "曲目2",
+    "Track02_Description": "初音未来",
+    "Track03_Title": "曲目3",
+    "Track03_Description": "初音未来",
+    "Track04_Title": "曲目4",
+    "Track04_Description": "初音未来",
+    "Track05_Title": "曲目5",
+    "Track05_Description": "初音未来",
+    "Track06_Title": "曲目6",
+    "Track06_Description": "初音未来",
+    "Track07_Title": "曲目7",
+    "Track07_Description": "初音未来",
+    "Track08_Title": "曲目8",
+    "Track08_Description": "初音未来",
+    "Track09_Title": "曲目9",
+    "Track09_Description": "初音未来",
+    "Track10_Title": "曲目10",
+    "Track10_Description": "初音未来",
+
+
+
+    "Footer_Additional_Heading": "页末额外内容",
+    "Footer_Additional_Text": "很长很多的额外介绍写在这里",
+    "Footer_Additional_Image": "",
+
+    "Total_Staff": 6,
+    "Staff01_Name": "作者1",
+    "Staff01_Role": "主催",
+    "Staff01_URL": "http://www.baidu.com",
+    "Staff02_Name": "作者2",
+    "Staff02_Role": "歌者",
+    "Staff02_URL": "http://www.baidu.com",
+    "Staff03_Name": "作者3",
+    "Staff03_Role": "画师",
+    "Staff03_URL": "http://www.baidu.com",
+    "Staff04_Name": "作者4",
+    "Staff04_Role": "混音",
+    "Staff04_URL": "http://www.baidu.com",
+    "Staff05_Name": "作者5",
+    "Staff05_Role": "监督",
+    "Staff05_URL": "http://www.baidu.com",
+    "Staff06_Name": "作者6",
+    "Staff06_Role": "设计",
+    "Staff06_URL": "http://www.baidu.com",
+
+
+
+    "Footer_Text": "这里可以在页末放一些字体"
+
+
+
+}

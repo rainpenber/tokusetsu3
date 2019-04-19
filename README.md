@@ -4,6 +4,8 @@ The fastest way to make doujin landing page
 
 - <https://sanographix.github.io/tokusetsu3/>
 
+EJS modified page (demo):
+- <http://www.lyyousa.cn/1stalbum.html>
 
 由sanographix老师的同人着陆页tumblr模板 tokusetsu3 制作的EJS模板。由于完全按照tumblr的范式编写，模板只能用于tumblr上使用。**即使是用gh-dev**专用于独立页面的分支，发布到自己的服务器上非常不便。我便进行了彻底的ejs重新编写。
 
